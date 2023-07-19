@@ -1,40 +1,33 @@
 import React from 'react'
 import HornedBeast from "../hornedBeast/hornedBeast";
 import './main.css';
+import Data from "../../data.json"
 
 export default function main() {
 
-   let data =  [{
-        "_id": 1,
-        "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
-        "title": "UniWhal",
-        "description": "A unicorn and a narwhal nuzzling their horns",
-        "keyword": "narwhal",
-        "horns": 1
-      },
-    
-      {
-        "_id": 2,
-        "image_url": "https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80",
-        "title": "Rhino Family",
-        "description": "Parent rhino with two babies",
-        "keyword": "rhino",
-        "horns": 2
-      },
-    
-      {
-        "_id": 3,
-        "image_url": "https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg",
-        "title": "Unicorn Head",
-        "description": "Someone wearing a very silly unicorn head mask",
-        "keyword": "unicorn",
-        "horns": 1
-    }]
+  
   return (
     <main>
-        <HornedBeast title = {data[0].title} imageUrl = {data[0].image_url} description = {data[0].description} />
-        <HornedBeast title = {data[1].title} imageUrl = {data[1].image_url} description = {data[1].description} />
-        <HornedBeast title = {data[2].title} imageUrl = {data[2].image_url} description = {data[2].description} />
+        <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description} />
+        <HornedBeast title = {Data[1].title} imageUrl = {Data[1].image_url} description = {Data[1].description} />
+        <HornedBeast title = {Data[2].title} imageUrl = {Data[2].image_url} description = {Data[2].description} />
+        <HornedBeast title = {Data[3].title} imageUrl = {Data[3].image_url} description = {Data[3].description} />
+        <HornedBeast title = {Data[4].title} imageUrl = {Data[4].image_url} description = {Data[4].description} />
+        <HornedBeast title = {Data[5].title} imageUrl = {Data[5].image_url} description = {Data[5].description} />
+        <HornedBeast title = {Data[6].title} imageUrl = {Data[6].image_url} description = {Data[6].description} />
+        <HornedBeast title = {Data[7].title} imageUrl = {Data[7].image_url} description = {Data[7].description} />
+        <HornedBeast title = {Data[8].title} imageUrl = {Data[8].image_url} description = {Data[8].description} />
+        <HornedBeast title = {Data[9].title} imageUrl = {Data[9].image_url} description = {Data[9].description} />
+        <HornedBeast title = {Data[10].title} imageUrl = {Data[10].image_url} description = {Data[10].description} />
+        <HornedBeast title = {Data[11].title} imageUrl = {Data[11].image_url} description = {Data[11].description} />
+        <HornedBeast title = {Data[12].title} imageUrl = {Data[12].image_url} description = {Data[12].description} />
+        <HornedBeast title = {Data[13].title} imageUrl = {Data[13].image_url} description = {Data[13].description} />
+        <HornedBeast title = {Data[14].title} imageUrl = {Data[14].image_url} description = {Data[14].description} />
+        <HornedBeast title = {Data[15].title} imageUrl = {Data[15].image_url} description = {Data[15].description} />
+        <HornedBeast title = {Data[16].title} imageUrl = {Data[16].image_url} description = {Data[16].description} />
+        <HornedBeast title = {Data[17].title} imageUrl = {Data[17].image_url} description = {Data[17].description} />
+        <HornedBeast title = {Data[18].title} imageUrl = {Data[18].image_url} description = {Data[18].description} />
+        <HornedBeast title = {Data[19].title} imageUrl = {Data[19].image_url} description = {Data[19].description} />
 
     </main>
   )
