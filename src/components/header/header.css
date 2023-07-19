@@ -1,0 +1,15 @@
+header{
+    text-align: center;
+    color: aqua;
+    background-color: black;
+    margin: 0 auto;
+    border: solid black;
+    margin-bottom: 20vh;
+    height: 10vh
+}
+
+h1{
+    font-family: 'Gill Sans';
+    font-weight: 2000;
+    padding-top: 5vh ;
+}

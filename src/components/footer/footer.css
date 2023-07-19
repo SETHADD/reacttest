@@ -1,0 +1,9 @@
+footer{
+    text-align: center;
+    color: aqua;
+    background-color: black;
+    /* position: relative;
+    top: 13rem; */
+    height: 5vh;
+    padding-top: 2pc;
+}

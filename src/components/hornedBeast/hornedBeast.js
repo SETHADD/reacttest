@@ -1,8 +1,9 @@
 import React from 'react'
+import './hornedBeast.css'
 
 export default function hornedBeast({title,imageUrl,description}) {
   return (
-    <div>
+    <div className='content'>
         <h2>
         {description}
         </h2>
@@ -15,3 +16,4 @@ export default function hornedBeast({title,imageUrl,description}) {
     </div>
   )
 }
+
