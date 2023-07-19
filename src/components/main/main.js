@@ -1,14 +1,18 @@
-import React from 'react'
+import React from 'react';
 import HornedBeast from "../hornedBeast/hornedBeast";
 import './main.css';
 import Data from "../../data.json"
 
-export default function main() {
+
+
+export default function Main() {
+
+ 
 
   
   return (
     <main>
-        <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description} />
+        <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description}  />
         <HornedBeast title = {Data[1].title} imageUrl = {Data[1].image_url} description = {Data[1].description} />
         <HornedBeast title = {Data[2].title} imageUrl = {Data[2].image_url} description = {Data[2].description} />
         <HornedBeast title = {Data[3].title} imageUrl = {Data[3].image_url} description = {Data[3].description} />

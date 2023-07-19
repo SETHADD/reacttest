@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 import './hornedBeast.css'
 
-export default function hornedBeast({title,imageUrl,description}) {
+export default function HornedBeast({title,imageUrl,description}) {
+
+  const [like, setLike] = useState(0);
+
+
   return (
     <div className='content'>
         <h2>
@@ -12,7 +17,7 @@ export default function hornedBeast({title,imageUrl,description}) {
         <p>
         {title}
         </p>
-        
+        <div className='emoji'onClick={()=>setLike(like + 1)}>🤩:{like}</div>
     </div>
   )
 }
