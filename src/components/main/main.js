@@ -1,18 +1,43 @@
 import React from 'react';
 import HornedBeast from "../hornedBeast/hornedBeast";
-import './main.css';
-import Data from "../../data.json"
+import './main.css'
 
 
 
-export default function Main() {
+export default function Main({data}) {
 
- 
+
 
   
   return (
-    <main>
-        <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description}  />
+    <main> 
+
+      {data.map(
+        (Beast,Key) => { return(
+          <HornedBeast
+          title = {Beast.title}
+          imageUrl={Beast.image_url}
+          description={Beast.description}
+          key={Key._id}
+          />)
+        } 
+      ) 
+      }
+      
+
+      {/* {data.map(function(Beast){
+        return(<HornedBeast title = {Beast.title}
+          imageUrl={Beast.image_url}
+          description={Beast.description}
+        />)
+      })} */}
+
+
+
+
+
+
+        {/* <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description} />
         <HornedBeast title = {Data[1].title} imageUrl = {Data[1].image_url} description = {Data[1].description} />
         <HornedBeast title = {Data[2].title} imageUrl = {Data[2].image_url} description = {Data[2].description} />
         <HornedBeast title = {Data[3].title} imageUrl = {Data[3].image_url} description = {Data[3].description} />
@@ -31,7 +56,7 @@ export default function Main() {
         <HornedBeast title = {Data[16].title} imageUrl = {Data[16].image_url} description = {Data[16].description} />
         <HornedBeast title = {Data[17].title} imageUrl = {Data[17].image_url} description = {Data[17].description} />
         <HornedBeast title = {Data[18].title} imageUrl = {Data[18].image_url} description = {Data[18].description} />
-        <HornedBeast title = {Data[19].title} imageUrl = {Data[19].image_url} description = {Data[19].description} />
+  <HornedBeast title = {Data[19].title} imageUrl = {Data[19].image_url} description = {Data[19].description} /> */}
 
     </main>
   )
