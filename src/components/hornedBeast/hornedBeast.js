@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 import './hornedBeast.css'
 
-export default function HornedBeast({title,imageUrl,description}) {
+export default function HornedBeast({title,imageUrl,description,click,allBeasts}) {
 
   const [like, setLike] = useState(0);
+
+
 
 
   return (
@@ -12,8 +14,7 @@ export default function HornedBeast({title,imageUrl,description}) {
         <h2>
         {description}
         </h2>
-        <img src= {imageUrl} alt= {description} title= {title}>
-        </img>
+        <img src= {imageUrl} alt= {description} title= {title} onClick={()=>{click(allBeasts)}}/>
         <p>
         {title}
         </p>

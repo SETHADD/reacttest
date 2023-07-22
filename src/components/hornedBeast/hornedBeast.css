@@ -4,6 +4,7 @@ img {
     object-fit: contain;
     object-position: center;
     padding-left: 50px;
+    cursor: pointer;
   }
 
 .content h2{

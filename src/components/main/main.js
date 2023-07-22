@@ -1,29 +1,22 @@
-import React from 'react';
+import React from "react";
 import HornedBeast from "../hornedBeast/hornedBeast";
-import './main.css'
+import "./main.css";
 
-
-
-export default function Main({data}) {
-
-
-
-  
+export default function Main({ data, render }) {
   return (
-    <main> 
-
-      {data.map(
-        (Beast,Key) => { return(
+    <main>
+      {data.map((Beast,key) => {
+        return (
           <HornedBeast
-          title = {Beast.title}
-          imageUrl={Beast.image_url}
-          description={Beast.description}
-          key={Key._id}
-          />)
-        } 
-      ) 
-      }
-      
+            title={Beast.title}
+            imageUrl={Beast.image_url}
+            description={Beast.description}
+            key={Beast._id}
+            click = {render}
+            allBeasts = {Beast}
+          />
+        );
+      })}
 
       {/* {data.map(function(Beast){
         return(<HornedBeast title = {Beast.title}
@@ -32,12 +25,7 @@ export default function Main({data}) {
         />)
       })} */}
 
-
-
-
-
-
-        {/* <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description} />
+      {/* <HornedBeast title = {Data[0].title} imageUrl = {Data[0].image_url} description = {Data[0].description} />
         <HornedBeast title = {Data[1].title} imageUrl = {Data[1].image_url} description = {Data[1].description} />
         <HornedBeast title = {Data[2].title} imageUrl = {Data[2].image_url} description = {Data[2].description} />
         <HornedBeast title = {Data[3].title} imageUrl = {Data[3].image_url} description = {Data[3].description} />
@@ -57,7 +45,6 @@ export default function Main({data}) {
         <HornedBeast title = {Data[17].title} imageUrl = {Data[17].image_url} description = {Data[17].description} />
         <HornedBeast title = {Data[18].title} imageUrl = {Data[18].image_url} description = {Data[18].description} />
   <HornedBeast title = {Data[19].title} imageUrl = {Data[19].image_url} description = {Data[19].description} /> */}
-
     </main>
-  )
+  );
 }

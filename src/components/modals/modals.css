@@ -1,0 +1,51 @@
+.h-container{
+    height: 100vh;
+    width: 140vh;
+    background-color: rgba(255,255,255,0.7);
+    border: solid black;
+    position: sticky;
+    bottom: 0;
+    right:5rem;
+}
+
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3vh;
+    border-radius: 15px 15px 15px 15px;
+    border: solid red;
+    color: red;
+}
+
+.close:hover{
+    background-color: black;
+}
+
+
+    .highlight img{
+        height: 90vh;
+        width: 90vh;
+        object-fit: cover;
+        
+    }
+
+    .highlight:first-child{
+        text-align: center;
+        font-size: 300;
+        font-weight: 600;
+    }
+
+    .highlight h3{
+        font-weight: 30px;
+        font-size: 30px;
+        background-color: aquamarine;
+    }
+
+    .highlight p{
+        background-color: aquamarine;
+        font-size: 30px;
+        font-weight: 200;
+    }
+
