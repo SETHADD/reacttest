@@ -2,7 +2,7 @@ import React from "react";
 import HornedBeast from "../hornedBeast/hornedBeast";
 import "./main.css";
 
-export default function Main({  render, HornData }) {
+export default function Main({render, HornData}) {
   return (
     <main>
       {HornData.map((Beast) => {
