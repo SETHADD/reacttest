@@ -14,7 +14,9 @@ header{
 h1{
     font-family: 'Gill Sans';
     padding-top: 5vh ;
-    margin-left: 40vw;
+    margin-left: 33vw;
+    font-weight: bolder;
+    font-size: x-large;
 }
 
 .forms{
