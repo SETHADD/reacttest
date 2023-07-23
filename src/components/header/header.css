@@ -5,11 +5,24 @@ header{
     margin: 0 auto;
     border: solid black;
     margin-bottom: 1rem;
-    height: 10vh
+    height: 10vh;
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
 }
 
 h1{
     font-family: 'Gill Sans';
+    padding-top: 5vh ;
+    margin-left: 40vw;
+}
+
+.forms{
+    font-family: 'Gill Sans';
     font-weight: 2000;
     padding-top: 5vh ;
+}
+
+.selectName{
+    margin-left: 1rem;
 }

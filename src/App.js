@@ -10,6 +10,7 @@ import { useState } from "react";
 function App() {
   const [HighLight, setHighlight] = useState({});
   const [Close, setClose] = useState(false);
+  const [HornData, setHornData] = useState(Data );
 
   function hide() {
     setClose(!Close);
@@ -21,10 +22,17 @@ function App() {
     setHighlight(beast);
   }
 
+  let handleChoice = (event) => {
+    let numSelected = parseInt(event.target.value);
+    const select = Data.filter((horn) => horn.horns === numSelected);
+
+    event.target.value === "all" ? setHornData(Data ) : setHornData(select);
+  };
+
   return (
     <div className="App">
-      <Header />
-      <Main data={Data} render={render} />
+      <Header handleChoice ={handleChoice}/>
+      <Main render={render} HornData = {HornData} />
       {Close && <Modals hide={hide} HighLight={HighLight} />}
       <Footer />
     </div>
